@@ -5,7 +5,7 @@ export default function Nav (){
    
    
     return (
-        <nav className="big-row">
+        <nav className="container--big-row">
             <div className="nav__container ">
                 <div className="logo">
                 <figure className="logo__container"><a href="#" ><img src='paw.png' alt="Meow Hosting Icon"/></a></figure>
