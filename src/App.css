@@ -35,7 +35,7 @@ img{
 
 .container--big-row{
   width:100%;
-  max-width:1400px;
+  max-width:1200px;
   margin:0 auto;
       
 }
@@ -63,7 +63,7 @@ button:active{
 }
 .btn{
   border: none;
-  color: #fff;
+  color: #F4A5AE;
 background-color: #174873;
 border-radius: 50px ;
 padding:  16px 32px;
@@ -72,8 +72,8 @@ font-size: 16px;
 transition: all .3s ease;
 }
 .btn:hover{
-color: #e3e3e3;
-background-color: #103352;
+color: #174873;
+background-color: #F4A5AE;
 }
 
 
@@ -248,25 +248,41 @@ font-size: 18px;
   
 }
 .services_item{
- 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+
   width:calc(100%/3);
   padding: 32px 8px;
 }
 .services_icon{
-  
-  border: solid #F4A5AE 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid #174873 1px;
   border-radius: 50%;
   font-size: 24px;
-  padding: 12px ;
+  padding: 20px ;
+  margin-right: 12px;
   text-align: center;
   width: 60px;
   height: 60px;
-  color:#174873;
-
-
+  color:#F4A5AE;
 }
-
-
+.services_item--description{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align:left;
+}
+.services_item--title{
+  margin-bottom:16px;
+}
+.services_item--para{
+ color:#7C8BA1;
+ line-height: 2;
+}
 
 
 /*Small phones, tablets, large smartphone */ 
