@@ -14,10 +14,10 @@ export default function Started (){
             <div>
                 <span className="customers-text">OUR TRUSTED CUSTOMERS</span>
                 <div className="started--customers-container">
-                <i class="fa-solid fa-cat"></i>
-                <i class="fa-solid fa-shield-cat"></i>
-                <i class="fa-solid fa-paw"></i>
-                <i class="fa-solid fa-dog"></i>
+                <i class="fa-solid fa-cat customer-icon"></i>
+                <i class="fa-solid fa-shield-cat customer-icon"></i>
+                <i class="fa-solid fa-paw customer-icon"></i>
+                <i class="fa-solid fa-dog customer-icon"></i>
                 
                 
                 
