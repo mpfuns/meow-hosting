@@ -205,7 +205,7 @@ input:focus{
 }
 
 .started--img-container{
-  width:500px;
+  max-width:500px;
 }
 .customers-text{
   color: #A0AEC0;
@@ -285,16 +285,32 @@ font-size: 18px;
 }
 /*Quality */
 .quality-container{
+  padding: 96px 0;
   display: flex;
   justify-content: center;
  
 }
 .quality-description{
-  padding-left:24px  ;
+  padding-right:24px  ;
   display: flex;
   flex-direction: column;
   max-width:500px;
   text-align: left;
+  align-items: flex-start;
+}
+.quality--img-container{
+  
+  max-width:600px;
+}
+.quality--text-right{
+text-align: left;
+}
+/*Steps */
+.steps-container{
+  padding: 96px 0;
+  display: flex;
+  justify-content: center;
+ 
 }
 
 
