@@ -75,8 +75,9 @@ transition: all .3s ease;
 color: #174873;
 background-color: #F4A5AE;
 }
-
-
+.button-space{
+  margin-top:32px;
+}
 
 .link__hover-line{
   transition: all .3s ease;
@@ -169,8 +170,8 @@ background-color: #F4A5AE;
 .started-para{
   line-height:1.5;
 }
-.started--description{
-  padding-left:24px  ;
+.content--description{
+  padding-left:32px  ;
   display: flex;
   flex-direction: column;
   max-width:500px;
@@ -204,8 +205,8 @@ input:focus{
   outline: none;
 }
 
-.started--img-container{
-  max-width:500px;
+.content--img-container{
+  max-width:600px;
 }
 .customers-text{
   color: #A0AEC0;
@@ -290,19 +291,12 @@ font-size: 18px;
   justify-content: center;
  
 }
-.quality-description{
-  padding-right:24px  ;
-  display: flex;
-  flex-direction: column;
-  max-width:500px;
-  text-align: left;
-  align-items: flex-start;
+.right-description{
+  padding-right:32px  ;
+ 
 }
-.quality--img-container{
-  
-  max-width:600px;
-}
-.quality--text-right{
+
+.content--text-right{
 text-align: left;
 }
 /*Steps */
@@ -310,8 +304,81 @@ text-align: left;
   padding: 96px 0;
   display: flex;
   justify-content: center;
+  align-items: center;
  
 }
+.steps--list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+.steps--content{
+  display: flex;
+  margin-bottom: 32px;
+}
+.steps--group{
+ display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 24px;
+}
+.steps--num{
+  font-size:36px;
+  color: #cbd5e0;
+}
+.steps--title{
+  font-size: 20px;
+  ;
+  margin-bottom: 10px;
+}
+.steps--para{
+font-size: 14px;
+color: #718096;
+}
+/*Value*/
+.value-list{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.value-item{
+  width: 200px;
+  margin-right: 20px;
+}
+.value-item-group{
+  margin-top: 32px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.value-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  font-size: 16px;
+  padding: 8px ;
+  margin-right: 12px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  color:#F4A5AE;
+}
+.value-green{
+  border: solid #9ae6b4 1px;
+  background-color:#9ae6b4 ;
+  color:#5d896c;
+}
+.value-blue{
+  border: solid #a4ebf1 1px;
+  background-color:#a4ebf1 ;
+  color:#5b8c90;
+}
+
 
 
 /*Small phones, tablets, large smartphone */ 
