@@ -7,7 +7,7 @@ export default function  Value (){
         <div className="content--description right-description">
             <h3 className="content-section--2title special-color content--text-right ">VALUES</h3>
             <h1 className="content-section--1title content--text-right">At <span className="special-color-1"> Meow Hosting </span></h1>
-            <p className="content-section--para">we're dedicated to delivering exceptional value with every hosting plan. Our feature-rich packages provide you with more than just web space.</p>
+            <p className="content-section--para content-section--para-left">we're dedicated to delivering exceptional value with every hosting plan. Our feature-rich packages provide you with more than just web space.</p>
              <div className="value-list">
                 <div className="value-item">
                     <div className="value-item-group">

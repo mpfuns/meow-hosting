@@ -244,7 +244,10 @@ input:focus{
 color: #7c8ba1;
 font-size: 18px;
 max-width: 800px;
-text-align: center;
+text-align:center;
+}
+.content-section--para-left{
+  text-align:left; 
 }
 .services_list{
   display: flex;
