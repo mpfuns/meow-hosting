@@ -5,6 +5,7 @@ import Features from './Comps/Features';
 import Quality from './Comps/Quality';
 import Steps from './Comps/Steps';
 import Value from './Comps/Value';
+import Pricing from './Comps/Pricing';
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
       <Quality />
       <Steps />
       <Value />
+      <Pricing />
     </div>
   );
 }

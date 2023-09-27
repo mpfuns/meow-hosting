@@ -19,7 +19,7 @@ export default function  Value (){
                 <div className="value-item">
                     <div className="value-item-group">
                    <div  className="value-icon value-green"><i class="fa-solid fa-money-bill-wave"></i></div> 
-                        <h2 className="steps--title">Profitable</h2>
+                        <h2 className="steps--title">Profitable Website</h2>
                     </div>
                     <p>Experience the perfect balance of affordability and performance as you unlock a world of possibilities for your website, all backed by our unwavering commitment to your success.</p>
                 </div>

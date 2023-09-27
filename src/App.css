@@ -103,8 +103,13 @@ background-color: #F4A5AE;
     color:#174873
   }
   .special-color-1{
-    color: #F4A5AE;;
+    color: #F4A5AE;
   }
+  .special-color-2{
+    color: white;
+  }
+
+
 
 /*Nav Comp*/
 .nav__container{
@@ -238,6 +243,8 @@ input:focus{
 .content-section--para{
 color: #7c8ba1;
 font-size: 18px;
+max-width: 800px;
+text-align: center;
 }
 .services_list{
   display: flex;
@@ -351,7 +358,7 @@ color: #718096;
   margin-top: 32px;
   margin-bottom: 14px;
   display: flex;
-  justify-items: center;
+  justify-content: flex-end;
   align-items: center;
 }
 .value-icon{
@@ -377,6 +384,105 @@ color: #718096;
   border: solid #a4ebf1 1px;
   background-color:#a4ebf1 ;
   color:#5b8c90;
+}
+/*Pricing*/
+#plan-items{
+margin-top: 20px;
+display: flex;
+ 
+}
+
+.plan-item{
+  margin-right:20px;
+  border-radius:10px;
+  max-width:300px;
+}
+
+.plan-item--strip{
+  
+  border-radius:10px 10px 0px 0px;
+  height:10px;
+ 
+}
+.plan-item--top{
+  border: solid #c0c5c2ad 1px;
+}
+.plan-item--top-description{
+  padding: 32px 0px;
+}
+.plan-item--title{
+  font-size: 20px;
+}
+.plan-item--price{
+  font-size:36px;
+  padding: 8px 0px;
+}
+.plan-item--month{
+  color: #a2a9b0;
+}
+.plan-item--mid{
+  padding: 32px;
+
+  border: solid #c0c5c2ad 1px;
+}
+.plan-item--para{
+margin-top: 20px;
+text-align: center;
+}
+.plan-item--bot{
+  border: solid #c0c5c2ad 1px;
+  border-radius:0px 0px 10px 10px;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+}
+.plan-item--button{
+padding: 16px 64px;
+border-radius: 100px;
+border: none;
+font-weight: bold;
+color:white;
+}
+.plan-item--button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1)
+
+}
+.strip-button-green{
+  background: linear-gradient(90deg,#4dc1b9 0%, #77dfd3 80%);
+}
+.strip-button-red{
+  background: linear-gradient(90deg,#e41c1c 0%, #e47f7f 80%);
+}
+.strip-button-blue{
+  background: linear-gradient(90deg,#0e2c46 0%, #174873 80%);
+  border: none;
+}
+.strip-button-blue-line{
+  border: solid #2e76b5 1px;
+}
+
+.white-button{
+  background: white;
+  color:#174873
+}
+.white-button:hover{
+  background: rgb(213, 213, 213);
+  color:#0e2c46
+}
+.plan-item--flex{
+  padding-top: 10px;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan-item--flex-match{
+  padding-bottom:10px ;
+}
+.plan-item--more-button{
+  border: none;
+  background: none;
+  font-size: 40px; 
 }
 
 
