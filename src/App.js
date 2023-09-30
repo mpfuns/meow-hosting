@@ -7,6 +7,7 @@ import Steps from './Comps/Steps';
 import Value from './Comps/Value';
 import Pricing from './Comps/Pricing';
 import Testimon from './Comps/Testimon';
+import data from './data';
 function App() {
   return (
     <div className="App">
@@ -17,7 +18,7 @@ function App() {
       <Steps />
       <Value />
       <Pricing />
-      <Testimon />
+      <Testimon data={data} />
     </div>
   );
 }
