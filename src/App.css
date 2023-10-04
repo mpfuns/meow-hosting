@@ -245,6 +245,7 @@ color: #7c8ba1;
 font-size: 18px;
 max-width: 800px;
 text-align:center;
+font-weight: 500;
 }
 .content-section--para-left{
   text-align:left; 
@@ -487,8 +488,30 @@ color:white;
   background: none;
   font-size: 40px; 
 }
-
-
+/*Testimon */
+.test-container{
+  padding: 96px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.test--stars{
+ margin-bottom: 16px;
+ color: #fabf2a;
+}
+.test--star-space{
+  margin-right: 4px;
+  
+}
+.test--photo-container{
+  width: 100px;
+  
+ 
+}
+.test--photo{
+  border-radius:100%
+}
 
 /*Small phones, tablets, large smartphone */ 
 @media (max-width: 768px){
