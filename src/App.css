@@ -541,8 +541,12 @@ margin-right: 32px;
 .test-buttons:hover{
   color: #113452;
   background-color: #d08e96;
-
 }
+
+/*FAQ*/
+
+
+
 
 /*Small phones, tablets, large smartphone */ 
 @media (max-width: 768px){
