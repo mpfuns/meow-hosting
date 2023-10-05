@@ -9,7 +9,7 @@ export default[
     {
         number:2,
         title:"Feline-Friendly Hosting at Its Finest!",
-        picImg:"pexels-pixabay-162174.jpg", 
+        picImg:"pexels-amber-janssens-6897077.jpg", 
         para:"I may have whiskers, but I've got high standards for hosting. This company's services are as smooth as my fur. My website is always online and lightning-fast!",  
         name:"Whiskers"  
             },

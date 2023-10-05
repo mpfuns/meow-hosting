@@ -43,12 +43,22 @@ export default function  Testimon (props){
                 <br/>
                 <p>{content.para}</p>
                 <br/>
-                <div>
-                 <figure className='test--photo-container'><img   className='test--photo' src={`testimonals/${content.picImg}`} /></figure>
-                 <h3>{content.name}</h3>  
+                <div className='test-layout--bottom'>
+                    <div className='test--cat'>
+                        <figure className='test--cat-photo-container'><img   className='test--cat-photo' src={`testimonals/${content.picImg}`} /></figure>
+                        <h2>{content.name}</h2>  
+                    </div>
+                    <div className='test-buttons--container'>
+                        <div className='test-buttons--line'>
+                        <button className='test-buttons'  onClick={()=> setCount(prevCount =>prevCount-1)}><i class="fa-solid fa-arrow-left"></i></button>
+                        </div>
+                        <div>
+                        <button  className='test-buttons' onClick={()=> setCount(prevCount =>prevCount+1)}><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                        
+                    </div>
                 </div>
-                <button onClick={()=> setCount(prevCount =>prevCount-1)}><i class="fa-solid fa-arrow-left"></i></button>
-                <button onClick={()=> setCount(prevCount =>prevCount+1)}><i class="fa-solid fa-arrow-right"></i></button>
+               
             </div>
         </div>
 
