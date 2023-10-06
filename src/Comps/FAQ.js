@@ -1,15 +1,20 @@
 import React from "react"
 
 export default function FAQ(){
-   const [questions, setquestion] = React.useState({
-    question1: false,
-    question2: false,
-    question3: false,
-    question4: false,
-    question5: false
-   })
-// array of objects 
-   
+   const [questions, setQuestions] = React.useState([{id: 1, open: false},{id: 2, open: false},{id: 3, open: false}, {id: 4, open: false}, {id: 5, open: false}])
+
+   function questionOpen (num){
+        setQuestions(oldQuestions => oldQuestions.map(part =>{
+            if(part.id === num){
+                return {...part, open: !part.open }
+            } else{
+                return part
+            }
+        }))
+
+
+   }
+   console.log(questions[0])
 
    
     return (
@@ -21,10 +26,10 @@ export default function FAQ(){
                 <div className="faq-list">
                     <div className="faq-item">
                         <div className="faq-item--group">
-                        <h2>How does security work with your hosting services? </h2>
-                        <button className="faq-item--button"><i class="fa-solid fa-angle-down"></i></button>
+                            <h2>How does security work with your hosting services? </h2>
+                            <button className="faq-item--button" onClick={() => questionOpen(1)}><i class="fa-solid fa-angle-down"></i></button>
                         </div>
-                        
+                        { questions[0].open? <p>tttt</p> :<p></p> }
                     </div>
 
 
