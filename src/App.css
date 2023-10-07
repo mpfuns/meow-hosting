@@ -554,6 +554,7 @@ margin-right: 32px;
   padding: 24px;
   border-radius: 4px;
   transition: all .3s ease;
+  margin-bottom: 20px;
 }
 .faq-item:hover{
   background-color: #e2e3e3;
@@ -567,13 +568,15 @@ margin-right: 32px;
   border: none;
   background: none;
   font-size: 20px;
-  transform: none
-}
-.faq-item--button:active{
-  transform: rotate(180deg);
+  transition: all ease-in-out;
+ 
+  
 }
 
-/*Small phones, tablets, large smartphone */ 
+
+
+
+/*Small phones, tablets, large smartphone   */ 
 @media (max-width: 768px){
   
 } 
