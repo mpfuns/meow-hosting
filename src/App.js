@@ -9,6 +9,8 @@ import Pricing from './Comps/Pricing';
 import Testimon from './Comps/Testimon';
 import data from './data';
 import FAQ from './Comps/FAQ';
+import Intro from './Comps/Intro';
+import Footer from './Comps/Footer';
 function App() {
   return (
     <div className="App">
@@ -21,6 +23,8 @@ function App() {
       <Pricing />
       <Testimon data={data} />
       <FAQ />
+      <Intro />
+      <Footer />
     </div>
   );
 }
