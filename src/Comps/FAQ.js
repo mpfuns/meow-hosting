@@ -24,7 +24,7 @@ export default function FAQ(){
    
     return (
         <div className="container--big-row ">
-            <div className="content-section">
+            <div id="FAQS" className="content-section">
                 <h3 className="content-section--2title special-color">FAQS</h3>
                 <h1 className="content-section--1title">Questions got your <span className="special-color-1">tongue </span><span className="special-color">?</span></h1>
                 <p className="content-section--para"> We got all the answers for them. No need to catch a hairball.</p>
