@@ -239,6 +239,12 @@ input:focus{
   font-size:48px;
   font-weight: 800;
   margin: 20px 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.content-section--2title{
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .content-section--para{
 color: #7c8ba1;
@@ -246,6 +252,8 @@ font-size: 18px;
 max-width: 800px;
 text-align:center;
 font-weight: 500;
+margin-left: 20px;
+margin-right: 20px;
 }
 .content-section--para-left{
   text-align:left; 
@@ -390,7 +398,7 @@ color: #718096;
   color:#5b8c90;
 }
 /*Pricing*/
-#plan-items{
+.plan-list{
 margin-top: 20px;
 display: flex;
  
@@ -556,6 +564,8 @@ margin-right: 32px;
   border-radius: 4px;
   transition: all .3s ease;
   margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .faq-item:hover{
   background-color: #e2e3e3;
@@ -584,6 +594,7 @@ margin-right: 32px;
   color: white;
   padding: 64px 32px;
   border-radius: 8px;
+  margin: 0px 20px;
 }
 .intro-text{
 text-align: left;
@@ -614,6 +625,10 @@ margin-right: 20px;
   background-color:#d35656;
   color: rgb(231, 231, 231);
 }
+.intro-buttons{
+  display: flex;
+  align-items: center;
+}
 
 /*Footer */ 
 footer{
@@ -621,7 +636,7 @@ footer{
 }
 
 .footer-container{
-  padding: 96px 0;
+  padding: 96px 16px;
   
 }
 .footer-list{
@@ -701,6 +716,93 @@ footer{
 /*Small phones, tablets, large smartphone   */ 
 @media (max-width: 768px){
   
+  .started--container{
+    flex-direction: column;
+    align-items: center; 
+  }
+.content--description{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+.content-section{
+  flex-direction: column;
+    align-items: center; 
+  
+}
+.content--text-right {
+  text-align: center;
+}
+.content-section--para-left{
+  text-align: center;
+}
+.services_list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+.services_item{ 
+  width: 50%;
+  
+}
+.quality-container{
+  flex-direction: column;
+  align-items: center;
+}
+.steps-container{
+  padding: 96px 0px 20px 0x;
+  flex-direction: column;
+}
+.steps--content{
+  flex-direction: column;
+  
+}
+.steps--group{
+  align-items: center;
+  text-align: center;
+}
+.value-list{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.plan-list{
+  flex-direction: column;
+   
+  }
+  .plan-item{
+    margin-bottom: 20px;
+  }
+  .test-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .test--stars{
+    text-align: center;
+  }
+  .intro-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-buttons{
+    margin-top: 20px;
+  }
+.footer-list{
+flex-wrap: wrap;
+justify-content: flex-start;
+}
+.footer-item{
+  margin-bottom: 20px;
+  width: calc(100%/4);
+}
+.footer-bottom{
+  flex-direction: column;
+}
+.footer--buttons-group{
+  margin: 20px;
+}
 } 
 /*Small Phones*/
 @media (max-width: 480px){

@@ -19,7 +19,7 @@ export default function Pricing(){
             <h3 className="content-section--2title special-color">PRICING</h3>
             <h1 className="content-section--1title">Reasonable & Flexible <span className="special-color-1">Plans</span></h1>
             <p className="content-section--para">Each plan is designed to cater to different levels of hosting needs and budgets, ensuring that customers can choose the plan that best suits their specific requirements. As their websites and online ventures grow, they can easily upgrade to higher-tier plans for more resources, features, and support.</p>
-            <div id="plan-items">
+            <div className="plan-list">
                 <br/>
                 <div className="plan-item">
                     <div className="plan-item--strip strip-button-green"><br/></div>

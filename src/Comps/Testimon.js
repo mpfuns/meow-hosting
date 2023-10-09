@@ -41,7 +41,7 @@ export default function  Testimon (props){
                 </div>
                 <h3 className='content--text-right'>{content.title}</h3>
                 <br/>
-                <p>{content.para}</p>
+                <p className='content-section--para-left'>{content.para}</p>
                 <br/>
                 <div className='test-layout--bottom'>
                     <div className='test--cat'>
