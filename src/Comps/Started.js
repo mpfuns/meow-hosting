@@ -9,7 +9,10 @@ export default function Started (){
             <h1 className="started-title">Welcome to Meow Hosting: <span className="special-color">Your Ultimate Hosting Solution</span></h1> 
             <p className="started-para">Join the Meow Hosting clowder by completing our quick and secure sign-up process. Choose your ideal hosting plan, select a domain name, and provide your information to get started. With just a few clicks, you'll have access to your hosting account, ready to install and launch your website, backed by our reliable support every step of the way.</p>  
             <div className="input-container">
-            <input type="text" placeholder="Your E-mail Address"/><button className="btn no-cursor">Get Started</button>
+            <div className="input-container--mobile">
+            <input type="text" placeholder="Your E-mail Address"/>
+            </div>
+            <button className="btn no-cursor">Get Started</button>
             </div>
             <div>
                 <span className="customers-text">OUR TRUSTED CUSTOMERS</span>

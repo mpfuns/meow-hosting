@@ -34,11 +34,11 @@ export default function Nav (){
             <i class="fa-solid fa-x"></i>
             </button>
             <ul className="menu__links">
-            <li className="menu_list"><a href="#" className="menu_link no-cursor" onClick={handleClick}>About</a></li>
-            <li className="menu_list"><a href="#" className="menu_link no-cursor" onClick={handleClick}>Blog</a></li>
-            <li className="menu_list" ><a href="#" className="menu_link no-cursor" onClick={handleClick}>Contact us</a></li>
-            <li className="menu_list" ><a href="#" className="menu_link no-cursor" onClick={handleClick}>Login</a></li>
-            <li className="menu_list" ><a href="#" className="menu_link no-cursor" onClick={handleClick}>Sign Up</a></li>
+            <li className="menu_list"><a href="" className="menu_link no-cursor" onClick={handleClick}>About</a></li>
+            <li className="menu_list"><a href="" className="menu_link no-cursor" onClick={handleClick}>Blog</a></li>
+            <li className="menu_list" ><a href="" className="menu_link no-cursor" onClick={handleClick}>Contact us</a></li>
+            <li className="menu_list" ><a href="" className="menu_link no-cursor" onClick={handleClick}>Login</a></li>
+            <li className="menu_list nav__link--primary" ><a href="" className="  menu_link  no-cursor" onClick={handleClick}>Sign Up</a></li>
             </ul> 
           </div> 
           :

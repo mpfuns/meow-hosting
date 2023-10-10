@@ -11,8 +11,8 @@ export default function  Value (){
              <div className="value-list">
                 <div className="value-item">
                     <div className="value-item-group">
-                   <div className="value-icon value-blue"><i class="fa-solid fa-globe"></i></div> 
-                        <h2 className="steps--title">Advanced Tech</h2>
+                         <div className="value-icon value-blue"><i class="fa-solid fa-globe"></i></div> 
+                         <h2 className="steps--title">Advanced Tech</h2>
                     </div>
                     <p>We offer the tools, security, and support you need to thrive online.</p>
                 </div>
