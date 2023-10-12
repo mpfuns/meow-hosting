@@ -1,12 +1,21 @@
 /* default  setup */ 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 *{
   font-family: "Inter", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box; 
 }
+
 h1, h2, h3, h4,h5, h6, span{
   color: "1C2321";
   text-align: center;
@@ -732,6 +741,8 @@ footer{
 .menu__drop{
   position: fixed;
   top: 10px;
+  left:2%;
+  
   background-color: white;
   border: 1px solid gray;
   border-radius: 8px;
@@ -867,6 +878,12 @@ color: #F4A5AE;
   .intro-buttons{
     margin-top: 20px;
   }
+  .intro-text{
+    text-align: center;
+  }
+  .faq-item--button{
+    margin-left: 20%;
+  }
 .footer-list{
 flex-wrap: wrap;
 justify-content: flex-start;
@@ -897,6 +914,7 @@ font-weight: 500;
     display: flex;
     flex-direction: column;
   }
+  
   .input-container--mobile{
   
   border: solid #cfcdcd 2px;
@@ -908,12 +926,47 @@ font-weight: 500;
   transition: all .3s ease;
   
 }
-.input-container:hover{
+.input-container--mobile:hover{
   border: solid #a5a5a5 2px;
 }
-.input-container:focus-within {
+.input-container--mobile:focus-within {
   border: solid #F4A5AE 2px;
 }
+.input-container:hover{
+  border: none;
+}
+.input-container:focus-within {
+  border: none;
+}
+.test-container{
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 8px;
+}
+.test-layout--bottom{
+  flex-direction: column;
+  align-items:center ;
+
+}
+.test-buttons--container{
+  margin-top: 20px;
+}
+.intro-buttons{
+  display: flex;
+  flex-direction: column;
+  
+}
+.intro-button--red{
+  margin-bottom: 16px;
+}
+.footer-list{
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  .footer-item{
+    margin-bottom: 20px;
+    width: calc(100%/4);
+  }
 
 }
 
