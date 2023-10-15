@@ -727,6 +727,33 @@ footer{
   background-color: rgb(202, 200, 200);
   color: #c28088;
 }
+/* animations*/
+
+@keyframes slideInLeft{
+  from{
+transform: translateX(-1600px);
+filter: blur(15px);
+  }
+  to{
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+@keyframes slideInRight{
+  from{
+      transform: translateX(1600px);
+      filter: blur(15px);
+  }
+  to{
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+
+.started--animation{
+  animation:slideInLeft 3s ease-in 500ms;
+}
 
 /*Small phones, tablets, large smartphone   */ 
 @media (max-width: 768px){
