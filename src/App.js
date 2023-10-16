@@ -15,50 +15,40 @@ import React, { useEffect, useState, useRef } from 'react';
 function App() {
  
   const startRef= useRef();
+  const [startSection, setStartSection]= useState(false);
   const featRef= useRef();
+  const [featSection, setFeatSection]= useState(false);
   const QualRef= useRef();
-  const [sections, setSections]= useState([{answer:false}, {answer:false}, {answer:false}]);
+  const [QualSection, setQualSSection]= useState(false);
 
-console.log(sections)
+
 
 
 
 
 useEffect(() =>{ 
- /*
+ 
   const observer = new IntersectionObserver((entries) =>{
-    const entry = entries[0];
+    const entry = entries[0].isIntersecting;
+
     console.log(entries)
-    entries.map( entry=>{
-      const placeInList= entries.indexOf(entry)
-     setSections(Prev =>{ Prev.map(part=>{
-      const piece= part.findIndex((num)=> num === placeInList)
-      if(piece.answer !== entry.isIntersecting){
-        return{
-          answer:entry.isIntersecting
-        }
-      }
-     }
-     
-     )
-     
-     }
-      )
+    console.log(entry)
     })
+    //not work Switch and statements
+    // need to use if staments  
 
    // setSections(entry.isIntersecting)
    //map  the  change to  make it  object 
    
 
-   })
+
    // control what observer
     observer.observe(startRef.current)
     observer.observe(featRef.current)
     observer.observe(QualRef.current)
 
-   */
-
-},[sections])
+   
+},[])
 
 
 
