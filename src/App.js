@@ -29,11 +29,23 @@ function App() {
 useEffect(() =>{ 
  
   const observer = new IntersectionObserver((entries) =>{
-    const entry = entries[0].isIntersecting;
+    
+     entries.forEach(entry =>{
+      const{target}= entry;
+      const {isVisible}= entry.isIntersecting;
+      if( target === startRef){
+        setStartSection(isVisible)
+      } else if( target=== featRef){
+        setFeatSection(isVisible)
+      }else if( target=== QualRef){
+        setQualSSection(isVisible)
+      }
+     })
 
     console.log(entries)
-    console.log(entry)
-    })
+
+    
+    }, [window.scrollY])
     //not work Switch and statements
     // need to use if staments  
 
