@@ -752,17 +752,20 @@ filter: blur(15px);
     filter: blur(0);
   }
 }
-.hidden-section--left{
-  transform: translateX(-1600px);
-  filter: blur(15px);
+.section--left{
+animation: slideInLeft 2s ease-in 0.25s 1 normal both;
+opacity: 1;
+
 }
-.hidden-section--right{
+.section--right{
   transform: translateX(1600px);
   filter: blur(15px);
 }
-.clear-section{
-  transform: translateX(0);
-  filter: blur(0);
+.hidden-section--left{
+  opacity: 0;
+}
+.hidden-section--right{
+  transform: translateX(1600px);
 }
 
 

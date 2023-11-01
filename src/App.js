@@ -23,41 +23,24 @@ function App() {
 
 
 
-
+console.log(startSection)
 
 
 useEffect(() =>{ 
  
-  const observer = new IntersectionObserver((entries) =>{
-    
-     entries.forEach(entry =>{
-      const{target}= entry;
-      const {isVisible}= entry.isIntersecting;
-      if( target === startRef){
-        setStartSection(isVisible)
-      } else if( target=== featRef){
-        setFeatSection(isVisible)
-      }else if( target=== QualRef){
-        setQualSSection(isVisible)
-      }
-     })
-
-    console.log(entries)
-
-    
-    }, [window.scrollY])
-    //not work Switch and statements
-    // need to use if staments  
-
-   // setSections(entry.isIntersecting)
-   //map  the  change to  make it  object 
-   
+  //set up for observer
+  const startObsever = new IntersectionObserver((entries) =>{
+    const entry= entries[0]
+    setStartSection(entry.isIntersecting)    
+  }, {
+    threshold:1,
+  })
 
 
-   // control what observer
-    observer.observe(startRef.current)
-    observer.observe(featRef.current)
-    observer.observe(QualRef.current)
+
+   // control what observer observe
+   startObsever.observe(startRef.current)
+
 
    
 },[])
@@ -71,7 +54,7 @@ useEffect(() =>{
       <Nav />
      
     
-      <section  className='' ref={startRef}>
+      <section  className={startSection? "section--left": "hidden-section--left"} ref={startRef}>
       <Started />
       </section>
       
