@@ -12,38 +12,95 @@ import FAQ from './Comps/FAQ';
 import Intro from './Comps/Intro';
 import Footer from './Comps/Footer';
 import React, { useEffect, useState, useRef } from 'react';
+
 function App() {
  
   const startRef= useRef();
-  const [startSection, setStartSection]= useState(false);
   const featRef= useRef();
-  const [featSection, setFeatSection]= useState(false);
-  const QualRef= useRef();
-  const [QualSection, setQualSSection]= useState(false);
+  const qualRef= useRef();
+  const stepRef= useRef();
+  const valueRef= useRef();
+  const pricingRef= useRef();
+  const  testRef= useRef();
+  const  faqRef= useRef();
+  const introRef= useRef();
+  const footerRef= useRef();
 
 
 
-console.log(startSection)
+
+  const [count, setCount]= useState(0)
+
+
+
+  
 
 
 useEffect(() =>{ 
  
   //set up for observer
-  const startObsever = new IntersectionObserver((entries) =>{
-    const entry= entries[0]
-    setStartSection(entry.isIntersecting)    
-  }, {
-    threshold:1,
-  })
-
-
-
-   // control what observer observe
-   startObsever.observe(startRef.current)
-
-
+  const obsever = new IntersectionObserver((entries) =>{
+ const entry=entries[0]
+ console.log(entry)
+ entry.target.classList.toggle('show', entry.isIntersecting)
+ 
+ if(entry.isIntersecting=== true){
+  setCount(prev => prev+1)
+   obsever.unobserve(entry.target)
    
-},[])
+ }
+
+ console.log(count)
+    
+    
+
+    
+  }, {threshold:0.05,
+  rootMargin:"150px"})
+// control what observer observe
+if(count===0){
+  obsever.observe(startRef.current)
+  
+}
+else if(count ===2){
+  obsever.observe(featRef.current)
+
+
+}
+else if(count ===3){
+  obsever.observe(qualRef.current)
+  
+}
+else if(count ===4){
+  obsever.observe(stepRef.current)
+  
+}
+else if(count ===5){
+  obsever.observe(valueRef.current)
+  
+}
+else if(count ==6){
+  obsever.observe(pricingRef.current)
+  
+}
+else if(count ===7){
+  obsever.observe(testRef.current)
+  
+}
+else if(count ===8){
+  obsever.observe(faqRef.current)
+  
+}
+else if(count ===9){
+  obsever.observe(introRef.current)
+  
+}
+else if(count ===10){
+  obsever.observe(footerRef.current)
+  
+}
+   
+},[count])
 
 
 
@@ -54,24 +111,39 @@ useEffect(() =>{
       <Nav />
      
     
-      <section  className={startSection? "section--left": "hidden-section--left"} ref={startRef}>
-      <Started />
+      <section  className= "section--left" ref={startRef}>
+        <Started />
       </section>
       
-      <section className=''ref={featRef}>
+      <section className='section--right'ref={featRef}>
         <Features />
       </section>
-      <section className='hidden-section--left' ref={QualRef} >
-      <Quality />
+      <section className='section--left' ref={qualRef} >
+        <Quality />
       </section>
-     
-      <Steps />
-      <Value />
-      <Pricing />
+     <section className='section--right'ref={stepRef}>
+        <Steps />
+     </section>
+      <section   className='section--left' ref={valueRef}>
+        <Value />
+      </section>
+    <section className='section--right'ref={pricingRef}>
+        <Pricing />
+    </section>
+
+     <section className='section--left' ref={testRef}>
       <Testimon data={data} />
+     </section>
+    <section className='section--right'ref={faqRef} >
       <FAQ />
-      <Intro />
-      <Footer />
+    </section>
+    <section className='section--left' ref={introRef}>
+        <Intro />
+    </section> 
+     <section className='section--right'ref={footerRef}>
+       <Footer />
+     </section>
+      
     </div>
   );
 }

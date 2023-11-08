@@ -752,20 +752,20 @@ filter: blur(15px);
     filter: blur(0);
   }
 }
-.section--left{
-animation: slideInLeft 2s ease-in 0.25s 1 normal both;
+.section--left.show{
+animation: slideInLeft 0.8s ease-in 0s 1 normal both;
 opacity: 1;
 
 }
-.section--right{
-  transform: translateX(1600px);
-  filter: blur(15px);
+.section--right.show{
+  animation: slideInRight 0.8s ease-in 0s 1 normal both;
+  opacity: 1;
 }
-.hidden-section--left{
+.section--left{
   opacity: 0;
 }
-.hidden-section--right{
-  transform: translateX(1600px);
+.section--right{
+  opacity: 0;
 }
 
 
