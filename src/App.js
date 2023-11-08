@@ -55,7 +55,7 @@ useEffect(() =>{
     
 
     
-  }, {threshold:0.05,
+  }, {threshold:0.02,
   rootMargin:"150px"})
 // control what observer observe
 if(count===0){
@@ -108,10 +108,11 @@ else if(count ===10){
   return (
     <div className="App">
      
-      <Nav />
+    
      
     
       <section  className= "section--left" ref={startRef}>
+        <Nav />
         <Started />
       </section>
       
