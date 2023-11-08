@@ -207,8 +207,10 @@ background-color: #F4A5AE;
   margin-top: 32px;
   margin-bottom: 32px;
   transition: all .3s ease;
+  align-items: center;
   
 }
+
 .input-container:hover{
   border: solid #a5a5a5 2px;
 }
