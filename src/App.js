@@ -62,40 +62,40 @@ if(count===0){
   obsever.observe(startRef.current)
   
 }
-else if(count ===2){
+else if(count ===1){
   obsever.observe(featRef.current)
 
 
 }
-else if(count ===3){
+else if(count ===2){
   obsever.observe(qualRef.current)
   
 }
-else if(count ===4){
+else if(count ===3){
   obsever.observe(stepRef.current)
   
 }
-else if(count ===5){
+else if(count ===4){
   obsever.observe(valueRef.current)
   
 }
-else if(count ==6){
+else if(count ==5){
   obsever.observe(pricingRef.current)
   
 }
-else if(count ===7){
+else if(count ===6){
   obsever.observe(testRef.current)
   
 }
-else if(count ===8){
+else if(count ===7){
   obsever.observe(faqRef.current)
   
 }
-else if(count ===9){
+else if(count ===8){
   obsever.observe(introRef.current)
   
 }
-else if(count ===10){
+else if(count ===9){
   obsever.observe(footerRef.current)
   
 }
